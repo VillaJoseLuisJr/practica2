@@ -1,16 +1,29 @@
 package main
 
 import (
-	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 )
 
-func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, i love %s!", r.URL.Path[1:])
+var tpl *template.Template
+var nombre = "Peron"
+
+func MostrarHTML(w http.ResponseWriter, r *http.Request) {
+	tpl.ExecuteTemplate(w, "index.html", nombre)
+}
+
+func MostrarFormulario(w http.ResponseWriter, r *http.Request) {
+	tpl.ExecuteTemplate(w, "formulario.html", nil)
 }
 
 func main() {
-	http.HandleFunc("/", Handler)
+	tpl, _ = tpl.ParseGlob("../web/templates/*.html")
+	fs := http.FileServer(http.Dir("web/static"))
+
+	http.Handle("/static/", http.StripPrefix("/static", fs))
+	http.HandleFunc("/", MostrarHTML)
+	http.HandleFunc("/formulario", MostrarFormulario)
+
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
