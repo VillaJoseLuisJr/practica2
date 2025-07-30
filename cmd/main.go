@@ -19,7 +19,7 @@ func MostrarFormulario(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	tpl, _ = tpl.ParseGlob("../web/templates/*.html")
-	fs := http.FileServer(http.Dir("web/static"))
+	fs := http.FileServer(http.Dir("../web/static"))
 
 	http.Handle("/static/", http.StripPrefix("/static", fs))
 	http.HandleFunc("/", MostrarHTML)
