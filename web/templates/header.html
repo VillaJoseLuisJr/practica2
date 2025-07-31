@@ -1,13 +1,32 @@
 {{define "Header"}}
 <header class="header">
-    <h1><a href="index.html">Título de la página en el Header</a></h1>
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
-            <li>Formulario</li>
-        </ul>
-    </nav>
+    <section class="header-info">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="phone-number">+54 1234 1234</span></p>
+    </section>
+    <section class="container-navbar">
+        <nav class="navbar container">
+            <a href="index.html" class="navbar-logo">
+                <img src="/static/img/hippo-solid-full.svg" alt="Logo empresa">
+                <span>
+                    Empresa
+                </span>
+            </a>
+            <div class="navbar-nav">
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="index.html">Inicio</a></li>
+                    <li class="nav-link"><a href="#">Nosotros</a></li>
+                    <li class="nav-link"><a href="#">Contacto</a></li>
+                    <li class="nav-link"><a href="#">Formulario</a></li>
+                </ul>
+                <form action="" class="navbar-search">
+                    <a href="#" class="search-icon" target="_blank">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </form>
+                <a href="#" class="button button-primary button-saber-mas">Saber más</a>
+            </div>
+
+        </nav>
+    </section>
 </header>
 {{end}}
