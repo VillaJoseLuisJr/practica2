@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 
-body {
+body, input {
     background-color: var(--bacground-gray);
     font-family: "Nunito", sans-serif;
 }
@@ -49,11 +49,16 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
+.input {
+    border: none;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    padding: 10px;
+    outline: none;
+    color: var(--dark-purple);
+    border-radius: 5px;
+}
+
 .main {
     background-color: aqua;
 }
-
-.footer {
-    background-color: yellow;
-}
-

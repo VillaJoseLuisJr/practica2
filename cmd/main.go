@@ -7,7 +7,7 @@ import (
 )
 
 var tpl *template.Template
-var nombre = "Peron"
+var nombre = "Peronista"
 
 func MostrarHTML(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "index.html", nombre)

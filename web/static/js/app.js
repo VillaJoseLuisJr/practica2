@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileMenu.style.display = "none"
     }
 
+    // Función para obtener el año actual
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    }
+
+    document.querySelector("#current-year").textContent = getCurrentYear();
+
     // Event Listener
     toogleButton.addEventListener("click", toogleMenu);
     window.addEventListener("resize", hideMenuResize);

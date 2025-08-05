@@ -1,12 +1,120 @@
 {{define "Footer"}}
 <footer class="footer">
-    <div class="footer-links">
-        <ul>
-            <li><a href="">logo de red social</a></li>
-            <li><a href="">logo de red social</a></li>
-            <li><a href="">logo de red social</a></li>
-            <li><a href="">logo de red social</a></li>
-        </ul>
-    </div>
+    <section class="footer__sections">
+        <div class="footer__sections-container container">
+            <article class="footer__section">
+                <h3 class="footer__section-title">Frutas</h3>
+                <ul class="footer__section-table">
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Manzanas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Bananas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Uvas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Ananas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutillas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Mangos</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Cerezas</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__section">
+                <h3 class="footer__section-title">Categorias</h3>
+                <ul class="footer__section-table">
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutas tropicales</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutas citricas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutas del bosque</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutas exoticas</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Frutas de temporada</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Smoothies y batidos</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Recetas com frutas</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__section">
+                <h3 class="footer__section-title">Servicios</h3>
+                <ul class="footer__section-table">
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Entregas a domicilio</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Suscripcion mensual</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Asesoramiento nutricional</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Eventos especiales</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Envios internacionales</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Personalizacion de pedidos</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a href="#" class="footer__section-link">Garantía de calidad</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer__section">
+                <h3 class="footer__section-title">Siguenos</h3>
+                <div class="social__container">
+                    <a href="#" class="social__icon">
+                        <i class="fa-brands fa-github fa-2xl" style="color: black;"></i>
+                    </a>
+                    <a href="" class="social__icon">
+                        <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i>
+                    </a>
+                    <a href="" class="social__icon">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i>
+                    </a>
+                    <a href="" class="social__icon">
+                        <i class="fa-brands fa-youtube fa-2xl" style="color: black;"></i>
+                    </a>
+                </div>
+                <div class="suscribe__container">
+                    <h3 class="footer__section-title">Suscribite ahora</h3>
+                    <form action="" class="suscribe__container-form">
+                        <input type="email" class="suscribe__container-input input" placeholder=" Ingresa tu correo electrónico">
+                        <a href="#" type="submit" class="button button-primary suscribe__container-button">Suscribirme</a>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="footer__copy">
+        <p class="footer__copy-text" id="copyright">
+            Copyright &copy;
+            <span id="current-year"></span>
+            Todos los derechos reservados. By 
+            <a href="linkedin.com/in/juniorvilla" target="_blank" class="footer__copy-link">BkFearow</a>
+        </p>
+    </section>
 </footer>
 {{end}}
