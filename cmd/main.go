@@ -7,10 +7,11 @@ import (
 )
 
 var tpl *template.Template
-var nombre = "Peronista"
+
+// var nombre = "Peronista"
 
 func MostrarHTML(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "index.html", nombre)
+	tpl.ExecuteTemplate(w, "index.html", nil)
 }
 
 func MostrarFormulario(w http.ResponseWriter, r *http.Request) {

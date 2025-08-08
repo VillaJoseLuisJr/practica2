@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/footer.css">
 
     <!-- Google Fonts -->
@@ -25,9 +26,9 @@
 
 <body>
     {{template "Header"}}
-    <main class="main">
-        <h1>Esta es la pagina principal, {{.}}</h1>
-    </main>
+
+    {{template "Main"}}
+
     {{template "Footer"}}
 
     <!-- JavaScript -->

@@ -4,12 +4,6 @@
     background-color: var(--pink);
     display: flex;
     flex-direction: column;
-
-    /* Temporales solo para mostrar en la parte inferior */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    /* Temporales solo para mostrar en la parte inferior */
 }
 
 .footer__sections {
@@ -59,6 +53,10 @@
 
 .social__icon i{
     height: 28px;
+}
+
+.iconos {
+    color: var(--dark-purple);
 }
 
 .suscribe__container-form {

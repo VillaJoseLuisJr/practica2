@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileMenu.style.display = "none"
     }
 
-    // Función para obtener el año actual
+    // Función para obtener el año actual (para el footer)
     const getCurrentYear = () => {
         return new Date().getFullYear();
     }
