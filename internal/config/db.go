@@ -11,7 +11,7 @@ import (
 var DB *sql.DB
 
 func init() {
-	// Configuración de la conexión
+	// Configuración de la conexión con la base de datos
 	cfg := mysql.Config{
 		User:                 "root",
 		Passwd:               "root123",
