@@ -2,24 +2,13 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"log"
 	"net/http"
 
 	"github.com/VillaJoseLuisJr/practica2/internal/config"
 )
 
-var tpl *template.Template
-
 // var nombre = "Peronista"
-
-func MostrarHTML(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "index.html", nil)
-}
-
-func MostrarFormulario(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "formulario.html", nil)
-}
 
 func main() {
 
@@ -42,12 +31,8 @@ func main() {
 	}
 	// Código de prueba
 
-	tpl, _ = tpl.ParseGlob("../web/templates/*.html")
-	fs := http.FileServer(http.Dir("../web/static"))
-
-	http.Handle("/static/", http.StripPrefix("/static", fs))
-	http.HandleFunc("/", MostrarHTML)
-	http.HandleFunc("/formulario", MostrarFormulario)
+	// Llamo a la función SetupRoutes del archivo rutas.go dentro de la carpeta config para que maneje las url
+	config.SetupRoutes()
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

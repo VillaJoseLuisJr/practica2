@@ -4,15 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="../static/img/hippo-solid-full.svg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/formulario.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Formulario</title>
 </head>
 
 <body>
-    <h1>Acá hay un Formulario</h1>
-    <form action="" method="post">
-        <ul>peron</ul>
-        <li>peron</li>
-    </form>
+    {{template "Header"}}
+
+    <section class="formulario__sections">
+        <h1>Agregar nuevo producto</h1>
+        <form action="" id="producto_form">
+            <div class="nombre">
+                <label for="name">Nombre del producto:</label>
+                <input type="text" placeholder="Nombre del producto" name="nombre" id="nombre_input">
+            </div>
+            <div class="descripcion">
+                <label for="descripcion">Descripción del producto:</label>
+                <textarea name="descripcion" id="descripcion_input" required maxlength="300"></textarea>
+            </div>
+            <div class="imagen">
+                <input type="file" name="imagen" id="imagen_input">
+            </div>
+            <div class="submit">
+                <input type="submit" value="enviar" id="form_button">
+            </div>
+        </form>
+    </section>
+
+    {{template "Footer"}}
 </body>
 
 </html>
