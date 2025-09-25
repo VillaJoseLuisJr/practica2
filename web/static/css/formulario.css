@@ -45,3 +45,13 @@ h1 {
     flex-direction: column;
     padding: 1rem;
 }
+
+#form_button {
+    cursor:pointer;
+}
+
+input {
+    border-color:none;
+    outline: none;
+    border: 0;
+}
