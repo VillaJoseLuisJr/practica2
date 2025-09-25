@@ -1,0 +1,47 @@
+@import url(style.css);
+
+.formulario__sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.formulario__div{
+    background-color: var(--green);
+    padding: 2rem;
+    border-radius: 25px;
+    max-width: 1440px;
+}
+
+h1 {
+    align-items: center;
+}
+
+#producto_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}

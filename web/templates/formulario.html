@@ -28,23 +28,25 @@
     {{template "Header"}}
 
     <section class="formulario__sections">
-        <h1>Agregar nuevo producto</h1>
-        <form action="" id="producto_form">
-            <div class="nombre">
-                <label for="name">Nombre del producto:</label>
-                <input type="text" placeholder="Nombre del producto" name="nombre" id="nombre_input">
-            </div>
-            <div class="descripcion">
-                <label for="descripcion">Descripción del producto:</label>
-                <textarea name="descripcion" id="descripcion_input" required maxlength="300"></textarea>
-            </div>
-            <div class="imagen">
-                <input type="file" name="imagen" id="imagen_input">
-            </div>
-            <div class="submit">
-                <input type="submit" value="enviar" id="form_button">
-            </div>
-        </form>
+        <div class="formulario__div">
+            <h1>Agregar nuevo producto</h1>
+            <form action="" id="producto_form">
+                <div class="nombre">
+                    <label for="name">Nombre del producto:</label>
+                    <input type="text" placeholder="Nombre del producto" name="nombre" id="nombre_input">
+                </div>
+                <div class="descripcion">
+                    <label for="descripcion">Descripción del producto:</label>
+                    <textarea name="descripcion" id="descripcion_input" required maxlength="300"></textarea>
+                </div>
+                <div class="imagen">
+                    <input type="file" name="imagen" id="imagen_input">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="enviar" id="form_button" class="button">
+                </div>
+            </form>
+        </div>
     </section>
 
     {{template "Footer"}}
