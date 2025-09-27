@@ -50,7 +50,7 @@ h1 {
     cursor:pointer;
 }
 
-input {
+.form-input {
     border-color:none;
     outline: none;
     border: 0;

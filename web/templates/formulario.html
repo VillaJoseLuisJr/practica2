@@ -30,20 +30,23 @@
     <section class="formulario__sections">
         <div class="formulario__div">
             <h1>Agregar nuevo producto</h1>
-            <form action="" id="producto_form">
+            <form action="/guardar" method="post" id="producto_form">
                 <div class="nombre">
                     <label for="name">Nombre del producto:</label>
-                    <input type="text" placeholder="Nombre del producto" name="nombre" id="nombre_input">
+                    <input type="text" placeholder="Nombre del producto" name="nombre" id="nombre_input"
+                        class="form-input">
                 </div>
                 <div class="descripcion">
                     <label for="descripcion">Descripción del producto:</label>
-                    <textarea name="descripcion" id="descripcion_input" required maxlength="300"></textarea>
+                    <textarea name="descripcion" id="descripcion_input" required maxlength="300"
+                        class="form-input"></textarea>
                 </div>
                 <div class="imagen">
-                    <input type="file" name="imagen" id="imagen_input">
+                    <input type="file" name="imagen" id="imagen_input" class="form-input">
                 </div>
                 <div class="submit">
-                    <input type="submit" value="enviar" id="form_button" class="button button-primary">
+                    <input type="submit" value="enviar" accept=".jpg, .png, .jpeg, .gif" id="form_button"
+                        class="button button-primary form-input">
                 </div>
             </form>
         </div>

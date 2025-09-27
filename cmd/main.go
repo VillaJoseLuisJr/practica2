@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	"github.com/VillaJoseLuisJr/practica2/internal/config"
+	"github.com/VillaJoseLuisJr/practica2/internal/controllers"
 )
 
 // var nombre = "Peronista"
@@ -32,7 +33,7 @@ func main() {
 	// Código de prueba
 
 	// Llamo a la función SetupRoutes del archivo rutas.go dentro de la carpeta config para que maneje las url
-	config.SetupRoutes()
+	controllers.SetupRoutes()
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
